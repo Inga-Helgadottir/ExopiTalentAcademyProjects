@@ -1,0 +1,270 @@
+:root {
+  --color-red: #f51b1b;
+  --color-green: #0d7028;
+}
+
+body {
+  margin: 0 15px;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-green);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*---------------------------------------------------------------------------------------------header*/
+
+#headerStyles {
+  font-size: 100px;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  color: var(--color-red);
+  display: flex;
+  justify-content: space-around;
+  border: solid 5px black;
+  background-color: white;
+  margin: 20px 0;
+}
+
+/* suit images in the header */
+.hsdc {
+  width: 100px;
+  height: auto;
+}
+
+.btn {
+  margin: 20px 10px;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 300px;
+}
+
+.startBtn {
+  color: var(--color-red);
+  background-color: black;
+  border: solid 3px var(--color-red);
+}
+
+.playerButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.standBtn {
+  background-color: #f5350a;
+  border: solid 4px black;
+}
+
+.hitBtn {
+  background-color: #25fa3e;
+  border: solid 4px black;
+}
+
+.showCardContainer {
+  background-color: #f51b1b;
+  width: 800px;
+  border: solid 8px black;
+}
+
+.playerCards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  background-color: #fff;
+  width: 50px;
+  margin: 10px;
+  padding: 5px;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.singleCardHsdc {
+  width: 20px;
+  height: 20px;
+  margin: 24px 3px;
+}
+
+.facedDownCard {
+  width: 60px;
+  height: 90px;
+  margin: 10px auto;
+  border: solid 2px black;
+}
+
+.theDealer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dealerHeadline {
+  margin: 2px;
+  text-decoration: underline;
+}
+
+.playerHeadline {
+  margin: 30px auto 5px auto;
+  text-decoration: underline;
+}
+
+.deck {
+  border: solid 4px black;
+}
+
+.bettingChips {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.playerNameAndCards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.chip {
+  height: 20px;
+  margin: 0 3px;
+}
+
+.bets {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  margin: 3px auto 5px auto;
+  background-color: var(--color-green);
+  height: 150px;
+  width: 150px;
+  border: solid 2px black;
+}
+
+.bets p,
+.bets img {
+  grid-row: 2;
+  grid-column: 1;
+  justify-self: center;
+}
+
+.bets p {
+  z-index: 2;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+}
+
+.bets h2 {
+  grid-row: 1;
+  grid-column: 1;
+  text-decoration: underline;
+  margin: 5px;
+}
+
+.bets img {
+  z-index: 1;
+  margin: 7px 0;
+  transform: scale(4);
+}
+
+.theBetSize {
+  width: 300px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.theBetSize h2 {
+  margin: 10px;
+}
+.theBetSize input {
+  padding: 5px;
+  border: solid 2px black;
+}
+
+.facedDownDeck {
+  margin: 3px auto 5px auto;
+  height: 90px;
+  width: 50px;
+  border: solid 4px black;
+}
+
+.card {
+  height: 90px;
+  width: 60px;
+  border: solid 2px black;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.winOrLooseInfoBox {
+  width: 1050px;
+  height: 367px;
+  background-color: var(--color-red);
+  z-index: 100;
+  border: solid 10px black;
+  text-decoration: underline;
+  font-size: 30px;
+  margin: 15px auto;
+}
+
+#winLooseBoxCardStyles {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#winLooseBoxCardStyles .card {
+  width: 20px;
+  height: 30px;
+  margin: 5px;
+  display: block;
+}
+
+#winLooseBoxCardStyles .card img {
+  width: 10px;
+  height: auto;
+  margin: 0 5px;
+}
+
+#winLooseBoxCardStyles .card h2 {
+  font-size: 15px;
+  margin: 0 auto;
+}
+#winLooseBoxCardStyles .playerHeadline {
+  margin-top: 0;
+}
+
+.betsAndDeck {
+  display: flex;
+  flex-direction: row;
+  margin: 0 190px;
+}
+
+.betsAndDeck .facedDownDeck {
+  margin: auto;
+}
